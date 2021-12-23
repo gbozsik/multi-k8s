@@ -1,5 +1,5 @@
 sudo: required
-services: 
+services:
   - docker
 env:
   global:
@@ -20,7 +20,7 @@ before_install:
 script:
   - docker run -e CI=true gbozsik/react-test npm test
 
-deploy: 
+deploy:
   provider: script
   script: bash ./deploy.sh
   on:

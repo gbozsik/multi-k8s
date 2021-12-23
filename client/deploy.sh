@@ -1,6 +1,6 @@
 docker build -t gbozsik/multi-client:latest -t gbozsik/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t gbozsik/multi-server:latest -t gbozsik/multi-server:$SHA -f ./server/Dockerfile ./server
-docker biuld -t gbozsik/multi-worker:latest -t gbozsik/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t gbozsik/multi-worker:latest -t gbozsik/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push gbozsik/multi-client:latest
 docker push gbozsik/multi-server:latest

@@ -12,5 +12,5 @@ docker push gbozsik/multi-worker:$SHA
 
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=gbozsik/multi-server$SHA
-kubectl set image deployments/client-deployment client=gbozsik/multi-client$SHA
+kubectl set image deployments/client-deployment client=gbozsik/multi-client:latest
 kubectl set image deployments/worker-deployment worker=gbozsik/multi-worker$SHA
